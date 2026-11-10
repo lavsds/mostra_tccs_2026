@@ -1,8 +1,6 @@
 /**
  * Informações da Mostra de TCCs 2026.
- * Edite a função no campo "funcao" de cada integrante.
- * Edite fotos e posições em "foto", "posicaoFoto" e "zoomFoto".
- * Preserve os IDs dos projetos: são utilizados nas URLs.
+ * Os IDs dos projetos são utilizados nas URLs
  */
 window.DADOS_SITE = {
   "escola": {
@@ -149,7 +147,7 @@ window.DADOS_SITE = {
           "nome": "LAVÍNIA ALESSANDRA SILVA",
           "email": "laviniaassd@gmail.com",
           "foto": "assets/img/projetos/condex/integrantes/lavinia.webp",
-          "posicaoFoto": "50% 24%",
+          "posicaoFoto": "40% 24%",
           "zoomFoto": 1.18,
           "funcao": "Desenvolvedora Front-end, UI/UX Designer e Documentação"
         },
@@ -177,7 +175,7 @@ window.DADOS_SITE = {
           "foto": "assets/img/projetos/condex/integrantes/murilo.webp",
           "posicaoFoto": "50% 16%",
           "zoomFoto": 1.14,
-          "funcao": "Desenvolvedor Full Stack"
+          "funcao": "Líder e Desenvolvedor Full Stack"
         }
       ]
     },

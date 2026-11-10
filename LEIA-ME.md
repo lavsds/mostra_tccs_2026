@@ -103,3 +103,27 @@ Exemplo:
   zoomFoto: 1.12
 }
 ```
+
+
+## Funções e disposição dos integrantes
+
+- Em `js/dados.js`, cada integrante tem um campo `funcao`.
+- A função aparece entre o nome e o e-mail.
+- O CSS de `.member-card`, `.member-info` e `.member-role` está em `css/style.css`.
+- Os arquivos das fotos originais não foram modificados.
+- As funções foram preenchidas com as informações enviadas pelas equipes em novembro de 2026.
+
+## Atualização do site publicado
+
+A Vercel está conectada ao GitHub. Atualize os arquivos alterados do repositório
+(`js/dados.js`, `js/app.js` e `css/style.css`) e faça um commit na branch
+principal. A Vercel gerará uma nova publicação automaticamente, preservando
+o endereço público de produção.
+
+## Privacidade
+
+O site expõe nomes, fotos e e-mails dos integrantes. Confirme com a escola
+e os participantes as autorizações e a necessidade de publicar cada dado
+antes da divulgação, com atenção especial a menores de idade.
+O site estático não pede senhas nem utiliza formulário, mas os dados
+publicados podem ser copiados por visitantes e indexados por buscadores.

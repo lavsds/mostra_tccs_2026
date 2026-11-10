@@ -82,7 +82,7 @@ function demonstracao(projeto) {
   const link = /^https:\/\//i.test(video)
     ? `<a class="link-arrow video-link" href="${escapar(video)}" target="_blank" rel="noopener noreferrer">Assistir à demonstração ↗</a>` : '';
 
-  // Não exibe uma seção vazia quando não há prints ou vídeo fornecidos.
+  // Não exibe uma seção vazia quando nn há prints ou vídeo (do software) fornecidos
   if (!prints.length && !link) return '';
 
   return `<section class="section container detail-demonstration">
