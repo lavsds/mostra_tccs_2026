@@ -1,10 +1,8 @@
 /**
- * Conteúdo editável da Mostra de TCCs 2026.
- *
- * Atualize textos, nomes, contatos, logos e imagens neste arquivo.
- * Arquivos de imagem devem existir em assets/img/... com o mesmo caminho informado.
- * Para adicionar prints, preencha o array prints; para vídeo, informe uma URL https.
- * Não altere os IDs dos projetos depois da publicação: eles são usados nas URLs.
+ * Informações da Mostra de TCCs 2026.
+ * Edite a função no campo "funcao" de cada integrante.
+ * Edite fotos e posições em "foto", "posicaoFoto" e "zoomFoto".
+ * Preserve os IDs dos projetos: são utilizados nas URLs.
  */
 window.DADOS_SITE = {
   "escola": {
@@ -48,29 +46,34 @@ window.DADOS_SITE = {
         {
           "nome": "EDUARDO GOMES DA COSTA",
           "email": "eduardo.gomes.d.costa@gmail.com",
-          "foto": "assets/img/projetos/lumi/integrantes/eduardo.webp"
+          "foto": "assets/img/projetos/lumi/integrantes/eduardo.webp",
+          "funcao": "Desenvolvedor"
         },
         {
           "nome": "KELLY FERNANDA DA SILVA",
           "email": "kellyfernandadasilva2009@gmail.com",
-          "foto": "assets/img/projetos/lumi/integrantes/kelly.webp"
+          "foto": "assets/img/projetos/lumi/integrantes/kelly.webp",
+          "funcao": "Documentação"
         },
         {
           "nome": "MIGUEL AUGUSTO PEZINI",
           "email": "miguelpezini7@gmail.com",
           "foto": "assets/img/projetos/lumi/integrantes/miguel.webp",
-          "posicaoFoto": "50% 18%"
+          "posicaoFoto": "50% 18%",
+          "funcao": "Documentação e Apresentação"
         },
         {
           "nome": "PAOLA DOMINGUES DE SOUZA",
           "email": "paolasdomingues@gmail.com",
           "foto": "assets/img/projetos/lumi/integrantes/paola.webp",
-          "posicaoFoto": "72% center"
+          "posicaoFoto": "72% center",
+          "funcao": "Documentação, Banco de Dados e Liderança"
         },
         {
           "nome": "RAMON GUILHERME RAMOS SCHIFFERLI",
           "email": "ramon.schifferli7@gmail.com",
-          "foto": "assets/img/projetos/lumi/integrantes/ramon.webp"
+          "foto": "assets/img/projetos/lumi/integrantes/ramon.webp",
+          "funcao": "Desenvolvedor"
         }
       ]
     },
@@ -96,27 +99,32 @@ window.DADOS_SITE = {
         {
           "nome": "GABRIEL MARTINS DE LIMA VIEIRA",
           "email": "amdshmmartins@gmail.com",
-          "foto": "assets/img/projetos/homelink/integrantes/gabriel-martins.webp"
+          "foto": "assets/img/projetos/homelink/integrantes/gabriel-martins.webp",
+          "funcao": "Desenvolvedor e Líder"
         },
         {
           "nome": "LUIS GABRIEL SANTOS DE OLIVEIRA",
           "email": "luisgabrielsantos767@gmail.com",
-          "foto": "assets/img/projetos/homelink/integrantes/luis.webp"
+          "foto": "assets/img/projetos/homelink/integrantes/luis.webp",
+          "funcao": "Banco de Dados"
         },
         {
           "nome": "MARCELA ALMEIDA RODRIGUES DE SOUZA",
           "email": "marcela.txt09@gmail.com",
-          "foto": "assets/img/projetos/homelink/integrantes/marcela.webp"
+          "foto": "assets/img/projetos/homelink/integrantes/marcela.webp",
+          "funcao": "Desenvolvedora"
         },
         {
           "nome": "THIAGO BRANCHINI RODRIGUES",
           "email": "branchinithiago@gmail.com",
-          "foto": "assets/img/projetos/homelink/integrantes/thiago-branchini.webp"
+          "foto": "assets/img/projetos/homelink/integrantes/thiago-branchini.webp",
+          "funcao": "Documentação"
         },
         {
           "nome": "THIAGO HENRIQUE BISPO",
           "email": "thiagohenriquebispo7@gmail.com",
-          "foto": "assets/img/projetos/homelink/integrantes/thiago-bispo.webp"
+          "foto": "assets/img/projetos/homelink/integrantes/thiago-bispo.webp",
+          "funcao": "Documentação e Apresentação"
         }
       ]
     },
@@ -142,29 +150,34 @@ window.DADOS_SITE = {
           "email": "laviniaassd@gmail.com",
           "foto": "assets/img/projetos/condex/integrantes/lavinia.webp",
           "posicaoFoto": "50% 24%",
-          "zoomFoto": 1.18
+          "zoomFoto": 1.18,
+          "funcao": "Desenvolvedora Front-end, UI/UX Designer e Documentação"
         },
         {
           "nome": "LETÍCIA BERNARDI",
           "email": "bernardileticia860@gmail.com",
-          "foto": "assets/img/projetos/condex/integrantes/leticia.webp"
+          "foto": "assets/img/projetos/condex/integrantes/leticia.webp",
+          "funcao": "Apresentação e Documentação"
         },
         {
           "nome": "LUCAS CIMENTON MENONCELLO",
           "email": "lucasmenoncello@gmail.com",
-          "foto": "assets/img/projetos/condex/integrantes/lucas.webp"
+          "foto": "assets/img/projetos/condex/integrantes/lucas.webp",
+          "funcao": "Desenvolvedor Back-end"
         },
         {
           "nome": "MATIAS GODOY BIGON",
           "email": "matiasgodoybigon@gmail.com",
-          "foto": "assets/img/projetos/condex/integrantes/matias.webp"
+          "foto": "assets/img/projetos/condex/integrantes/matias.webp",
+          "funcao": "Banco de Dados e Desenvolvimento Front-end"
         },
         {
           "nome": "MURILO TRIDA COSTA",
           "email": "murilotrida@gmail.com",
           "foto": "assets/img/projetos/condex/integrantes/murilo.webp",
           "posicaoFoto": "50% 16%",
-          "zoomFoto": 1.14
+          "zoomFoto": 1.14,
+          "funcao": "Desenvolvedor Full Stack"
         }
       ]
     },
@@ -185,22 +198,26 @@ window.DADOS_SITE = {
         {
           "nome": "KAUÃ BEZERRA DE OLIVEIRA",
           "email": "kauabezerra.7nf@gmail.com",
-          "foto": "assets/img/projetos/imobcontrol/integrantes/kaua.webp"
+          "foto": "assets/img/projetos/imobcontrol/integrantes/kaua.webp",
+          "funcao": "Documentação"
         },
         {
           "nome": "PABLO FERREIRA NEVES",
           "email": "ferreiranevespablo624@gmail.com",
-          "foto": "assets/img/projetos/imobcontrol/integrantes/pablo.webp"
+          "foto": "assets/img/projetos/imobcontrol/integrantes/pablo.webp",
+          "funcao": "Documentação e Apresentação"
         },
         {
           "nome": "SAMUEL VALTAIR MARAES",
           "email": "samuelvaltair@gmail.com",
-          "foto": "assets/img/projetos/imobcontrol/integrantes/samuel.webp"
+          "foto": "assets/img/projetos/imobcontrol/integrantes/samuel.webp",
+          "funcao": "Desenvolvedor e Líder"
         },
         {
           "nome": "MIGUEL FELIPE FRANCISCO",
           "email": "miguellfelipe42@gmail.com",
-          "foto": "assets/img/projetos/imobcontrol/integrantes/miguel-francisco.webp"
+          "foto": "assets/img/projetos/imobcontrol/integrantes/miguel-francisco.webp",
+          "funcao": "Banco de Dados"
         }
       ]
     }

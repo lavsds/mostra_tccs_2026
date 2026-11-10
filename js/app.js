@@ -65,10 +65,12 @@ function integranteCard(integrante) {
   const contato = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email)
     ? `<a class="member-email" href="mailto:${escapar(email)}">${escapar(email)}</a>` : '';
 
+  const funcao = String(integrante.funcao || '').trim();
   return `<article class="member-card">
     ${imagem(integrante.foto, `Foto de ${integrante.nome}`, 'member-avatar', integrante.nome.substring(0, 1), integrante.posicaoFoto, integrante.zoomFoto)}
     <div class="member-info">
       <h3>${escapar(integrante.nome)}</h3>
+      ${funcao ? `<p class="member-role">${escapar(funcao)}</p>` : ''}
       ${contato}
     </div>
   </article>`;
