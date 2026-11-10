@@ -1,0 +1,201 @@
+/* Mostra de TCCs 2026 — folha de estilos principal */
+:root {
+  --page: #f9faf8;
+  --surface: #fff;
+  --ink: #1c2b23;
+  --muted: #69786e;
+  --accent: #709779;
+  --accent-dark: #3f6d4e;
+  --line: #e1e8e0;
+  --radius: 18px;
+}
+
+/* Base e acessibilidade */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+body { margin: 0; background: var(--page); color: var(--ink); font-family: Inter, "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+p, h1, h2, h3 { margin-top: 0; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.container { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+.section { padding-block: 65px; }
+.accent { color: var(--accent); }
+.eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .13em; color: var(--accent-dark); text-transform: uppercase; margin-bottom: 14px; }
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #91b79a; margin-right: 8px; vertical-align: 2px; }
+.skip-link { position: absolute; top: -60px; left: 8px; z-index: 99; background: var(--ink); color: #fff; padding: 10px; }
+.skip-link:focus { top: 8px; }
+
+/* Cabeçalho: logo institucional, nome da mostra e navegação */
+.site-header { background: #f9faf8; border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 80px; }
+.brand { display: inline-flex; align-items: center; gap: 17px; min-width: 0; }
+.brand-logo { width: 103px; height: 59px; object-fit: contain; flex: none; }
+.brand-divider { width: 1px; height: 33px; background: var(--line); flex: none; }
+.brand-title { font-size: 12px; font-weight: 900; line-height: 1.4; white-space: nowrap; }
+.brand-title > span { color: var(--accent-dark); }
+.brand-title small { display: block; color: #87968a; font-size: 9px; font-weight: 700; letter-spacing: .13em; margin-top: 3px; }
+.nav { display: flex; gap: clamp(14px, 3vw, 34px); color: #54685a; font-weight: 650; font-size: 13px; }
+.nav a:hover, .link-arrow:hover, .detail-nav a:hover { color: var(--accent-dark); }
+
+/* Introdução compacta */
+.hero { padding-block: 44px 39px; }
+.hero-copy { max-width: 800px; }
+.hero h1 { font-size: clamp(38px, 4.2vw, 54px); line-height: 1.09; letter-spacing: -.058em; margin-bottom: 15px; }
+.hero h1 span { color: var(--accent); }
+.hero-description { max-width: 660px; color: #64746a; font-size: 16px; line-height: 1.72; margin-bottom: 13px; }
+.hero-meta { display: inline-block; color: #77877b; border-top: 1px solid var(--line); padding-top: 14px; font-size: 12px; margin-bottom: 0; }
+
+/* Cards de TCC */
+.project-section { padding-block: 45px 78px; border-top: 1px solid var(--line); background: var(--surface); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 29px; }
+.section-heading h2, .course-copy h2, .mentor-inner h2, .detail-text-grid h2 { font-size: clamp(27px, 3.2vw, 39px); letter-spacing: -.05em; line-height: 1.15; margin-bottom: 0; }
+.section-heading > p { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 255px; margin-bottom: 0; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.project-card { display: block; background: var(--surface); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); transition: transform .2s, box-shadow .2s; }
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #21352516; }
+.project-cover { position: relative; display: flex; justify-content: center; align-items: center; min-height: 208px; padding: 35px 15px 17px; overflow: hidden; }
+.tone-lumi { background: #f0ecf8; }
+.tone-homelink { background: #e9eff3; }
+.tone-condex { background: #e7f1fb; }
+.tone-imobcontrol { background: #e7f2e7; }
+.cover-label { position: absolute; top: 18px; left: 23px; z-index: 1; color: #607c6a; font-size: 10px; font-weight: 800; letter-spacing: .11em; }
+.project-card-content { padding: 22px 25px 23px; }
+.project-card-content h3 { font-size: 25px; letter-spacing: -.04em; margin-bottom: 6px; }
+.project-card-content > p { font-size: 13px; line-height: 1.6; color: #708075; min-height: 41px; margin-bottom: 18px; }
+.project-card-link { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 17px; font-weight: 800; font-size: 12px; }
+
+/* Suportes das logos: centralização sem marca-d'água, cortes ou distorção.
+   Fundos escuros favorecem marcas brancas/translúcidas; logos originais não são alteradas. */
+.logo-plate { display: flex; justify-content: center; align-items: center; width: min(82%, 345px); height: 133px; padding: 10px 18px; border-radius: 14px; background: #fff; box-shadow: 0 7px 21px #172b2810; overflow: hidden; }
+.logo-plate img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.logo-plate--lumi { width: 142px; height: 142px; padding: 0; background: #0e1127; }
+.logo-plate--homelink { background: #26323d; width: min(82%, 346px); height: 122px; padding: 15px 23px; }
+.logo-plate--condex { width: 158px; height: 142px; padding: 2px; background: #fff; }
+.logo-plate--imobcontrol { width: min(86%, 358px); height: 116px; padding: 12px; background: #f7f7f7; }
+.logo-fallback { color: #3f5361; font-weight: 800; font-size: 23px; text-align: center; }
+
+/* Seção do curso e professor orientador */
+.course-section { background: #edf3ee; border-top: 1px solid #dfe9df; }
+.course-inner { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 40px; align-items: center; }
+.course-mark { display: grid; place-items: center; width: 150px; height: 150px; padding: 19px; border: 1px solid #dce7dd; border-radius: 23px; background: #fff; }
+.course-mark img { width: 100%; height: 100%; object-fit: contain; }
+.course-copy { max-width: 755px; }
+.course-copy h2 { margin-bottom: 13px; }
+.course-copy > p:not(.eyebrow) { font-size: 14px; line-height: 1.8; color: #627267; margin-bottom: 19px; }
+.link-arrow { display: inline-flex; align-items: center; gap: 13px; color: #366643; font-weight: 800; font-size: 13px; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.mentor-section { background: #fff; border-bottom: 1px solid var(--line); padding-block: 37px; }
+.mentor-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.mentor-inner .eyebrow { margin-bottom: 7px; }
+.mentor-inner h2 { font-size: clamp(22px, 2.4vw, 30px); }
+.mentor-name { font-size: 15px; font-weight: 700; color: #4d6757; margin-bottom: 0; }
+.site-footer { color: #7c887e; }
+.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding-block: 25px; font-size: 11px; }
+.footer-inner p { margin-bottom: 0; }
+
+/* Página individual */
+.detail-nav { padding-top: 26px; font-size: 13px; color: #607968; font-weight: 750; }
+.detail-intro { display: grid; grid-template-columns: minmax(0,1fr) minmax(250px,360px); align-items: center; gap: 40px; padding-block: 50px 60px; }
+.detail-heading h1 { font-size: clamp(43px, 6vw, 70px); letter-spacing: -.07em; line-height: 1.07; margin-bottom: 17px; overflow-wrap: anywhere; }
+.detail-full-name { font-size: 18px; font-weight: 650; color: #48604f; line-height: 1.45; margin-bottom: 18px; }
+.detail-summary { font-size: 14px; line-height: 1.8; color: var(--muted); margin-bottom: 0; max-width: 650px; }
+.detail-intro .logo-plate { justify-self: center; width: 100%; max-width: 360px; height: 183px; border-radius: 18px; padding: 15px 22px; }
+.detail-intro .logo-plate--lumi { background: #0e1127; }
+.detail-intro .logo-plate--condex { background: #fff; }
+.detail-intro .logo-plate--imobcontrol { background: #f7f7f7; }
+.detail-intro .logo-plate--homelink { background: #26323d; }
+.detail-description { padding-block: 58px 60px; background: var(--surface); border-block: 1px solid var(--line); }
+.detail-text-grid { display: grid; grid-template-columns: minmax(170px,.8fr) minmax(0,1.8fr); gap: 60px; }
+.intro-paragraphs { max-width: 760px; }
+.intro-paragraphs p { color: #4d6154; line-height: 1.85; font-size: 14px; margin: 0 0 18px; }
+.intro-paragraphs p:last-child { margin: 0; }
+.detail-demonstration { padding-block: 67px 80px; }
+.screen-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.image-slot { position: relative; display: grid; place-items: center; overflow: hidden; }
+.image-slot > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.image-placeholder { text-align: center; font-weight: 800; color: #809d86; }
+.screen-image { min-height: 210px; border-radius: 14px; border: 1px solid var(--line); background: #eef3ee; }
+.video-link { margin-top: 20px; }
+.team-section { background: #fff; border-block: 1px solid var(--line); }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 16px; }
+.member-card { display: flex; flex-direction: column; align-items: center; min-width: 0; padding: 15px 12px 20px; border: 1px solid var(--line); border-radius: 14px; text-align: center; background: #fff; }
+.member-avatar { width: 100%; height: 155px; max-width: 165px; border-radius: 12px; background: #e5eee6; margin: 0 auto 16px; }
+.member-avatar img { object-fit: cover; }
+.member-avatar .image-placeholder { font-size: 25px; color: #6e9079; }
+.member-info { width: 100%; }
+.member-card h3 { font-size: 12px; letter-spacing: .015em; line-height: 1.5; min-height: 38px; margin-bottom: 7px; overflow-wrap: anywhere; }
+.member-email { color: var(--accent-dark); font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.detail-bottom { padding-block: 37px 54px; }
+.btn { display: inline-block; padding: 12px 17px; border-radius: 10px; color: #fff; background: var(--ink); font-weight: 800; font-size: 12px; }
+.btn:hover { background: var(--accent-dark); }
+.loading, .not-found { padding-block: 90px; }
+.not-found h1 { font-size: 40px; letter-spacing: -.04em; }
+.not-found p { color: var(--muted); }
+
+/* Adaptação de layout para tablets */
+@media (max-width: 900px) {
+  .detail-intro { grid-template-columns: minmax(0,1fr) 265px; gap: 25px; }
+  .detail-text-grid { gap: 30px; }
+}
+
+/* Adaptação de layout para celulares */
+@media (max-width: 650px) {
+  .container { width: min(100% - 32px, 1120px); }
+  .section { padding-block: 48px; }
+  .header-inner { flex-wrap: wrap; gap: 12px; padding-block: 10px; }
+  .brand { gap: 11px; }
+  .brand-logo { width: 78px; height: 46px; }
+  .brand-divider { height: 29px; }
+  .brand-title { font-size: 11px; }
+  .brand-title small { font-size: 7px; }
+  .nav { width: 100%; justify-content: flex-end; gap: 20px; padding-block: 3px; font-size: 12px; }
+  .hero { padding-block: 33px 32px; }
+  .hero h1 { font-size: clamp(35px, 9vw, 47px); }
+  .hero-description { font-size: 14px; }
+  .hero-meta { line-height: 1.5; }
+  .project-section { padding-top: 39px; }
+  .section-heading { display: block; }
+  .section-heading > p { max-width: 100%; margin-top: 12px; }
+  .project-grid { grid-template-columns: 1fr; gap: 17px; }
+  .project-cover { min-height: 184px; }
+  .cover-label { left: 19px; top: 15px; }
+  .project-card-content { padding: 19px 20px; }
+  .logo-plate--homelink { width: min(90%, 340px); }
+  .logo-plate--imobcontrol { width: min(92%, 355px); }
+  .course-inner { grid-template-columns: 80px minmax(0,1fr); gap: 18px; align-items: start; }
+  .course-mark { width: 80px; height: 80px; border-radius: 13px; padding: 10px; }
+  .course-copy h2 { font-size: 26px; }
+  .course-copy > p:not(.eyebrow) { font-size: 13px; }
+  .mentor-inner { display: block; }
+  .mentor-name { margin-top: 15px; }
+  .footer-inner { display: block; line-height: 1.7; }
+  .footer-inner p + p { margin-top: 4px; }
+  .detail-nav { padding-top: 20px; }
+  .detail-intro { display: flex; flex-direction: column-reverse; align-items: stretch; gap: 27px; padding-block: 32px 43px; }
+  .detail-heading h1 { font-size: 45px; }
+  .detail-intro .logo-plate { align-self: center; max-width: 380px; height: 155px; }
+  .detail-text-grid { grid-template-columns: 1fr; gap: 22px; }
+  .detail-description { padding-block: 48px; }
+  .intro-paragraphs p { font-size: 13.5px; line-height: 1.78; }
+  .screen-grid { grid-template-columns: 1fr; }
+  .screen-image { min-height: 175px; }
+  .team-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
+  .member-avatar { height: 133px; }
+  .member-card { padding: 9px 9px 15px; }
+  .member-card h3 { font-size: 11.5px; }
+  .member-email { font-size: 10px; }
+  .detail-bottom { padding-block: 29px 42px; }
+}
+
+@media (max-width: 360px) {
+  .brand-title { font-size: 10px; }
+  .nav { gap: 12px; }
+  .course-inner { grid-template-columns: 1fr; }
+  .course-mark { width: 82px; height: 82px; }
+  .project-cover { padding-inline: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .project-card { transition: none; }
+}

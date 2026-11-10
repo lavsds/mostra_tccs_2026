@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9faf8">
+  <meta name="description" content="Mostra de TCCs 2026 de Desenvolvimento de Sistemas da Etec João Belarmino. Turma A (manhã), Grupo B.">
+  <title>Mostra de TCCs 2026 | Etec João Belarmino</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/dados.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-pagina="inicio">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- Navegação principal; dados e logos em js/dados.js. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Página inicial da Mostra de TCCs">
+        <img class="brand-logo" id="logo-etec" src="assets/img/escola/logo-etec.png" alt="Etec João Belarmino">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-title">MOSTRA DE TCCs <span>2026</span><small>DESENVOLVIMENTO DE SISTEMAS</small></span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#curso">O curso</a>
+        <a href="#orientador">Orientação</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Abertura compacta da mostra. -->
+    <section class="hero container" id="inicio" aria-labelledby="titulo-mostra">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> ETEC JOÃO BELARMINO · AMPARO/SP</p>
+        <h1 id="titulo-mostra">Mostra de TCCs <span>2026.</span></h1>
+        <p class="hero-description">Conheça os Trabalhos de Conclusão de Curso desenvolvidos pelos estudantes do 3º ano de Desenvolvimento de Sistemas.</p>
+        <p class="hero-meta" id="identificacao-turma">Turma A (manhã) · Grupo B</p>
+      </div>
+    </section>
+
+    <!-- Cards preenchidos automaticamente a partir de js/dados.js. -->
+    <section class="section project-section" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TRABALHOS DE CONCLUSÃO DE CURSO</p>
+            <h2 id="titulo-projetos">Conheça os projetos<span class="accent">.</span></h2>
+          </div>
+          <p>Explore os quatro sistemas criados pelas equipes da turma.</p>
+        </div>
+        <div class="project-grid" id="lista-projetos"></div>
+      </div>
+    </section>
+
+    <!-- Descrição e link oficial do curso configurados em js/dados.js. -->
+    <section class="section course-section" id="curso" aria-labelledby="titulo-curso">
+      <div class="container course-inner">
+        <div class="course-mark">
+          <img id="logo-ds" src="assets/img/curso/logo-ds-monocromatica.png" alt="Elefante, símbolo de Desenvolvimento de Sistemas">
+        </div>
+        <div class="course-copy">
+          <p class="eyebrow">SOBRE A FORMAÇÃO</p>
+          <h2 id="titulo-curso">Desenvolvimento de Sistemas.</h2>
+          <p id="descricao-curso"></p>
+          <a id="link-curso" class="link-arrow" href="https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/" target="_blank" rel="noopener noreferrer">Saiba mais no Centro Paula Souza <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Identificação textual do professor orientador. -->
+    <section class="section mentor-section" id="orientador" aria-labelledby="titulo-orientador">
+      <div class="container mentor-inner">
+        <div>
+          <p class="eyebrow">ORIENTAÇÃO</p>
+          <h2 id="titulo-orientador">Professor orientador<span class="accent">.</span></h2>
+        </div>
+        <p class="mentor-name" id="nome-orientador">Nome do professor orientador</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 · Mostra de TCCs · Etec João Belarmino</p>
+      <p>3º Desenvolvimento de Sistemas · Turma A (manhã), Grupo B</p>
+    </div>
+  </footer>
+</body>
+</html>
