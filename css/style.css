@@ -88,7 +88,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .mentor-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .mentor-inner .eyebrow { margin-bottom: 7px; }
 .mentor-inner h2 { font-size: clamp(22px, 2.4vw, 30px); }
-.mentor-name { font-size: 15px; font-weight: 700; color: #4d6757; margin-bottom: 0; }
+.mentor-name { font-size: 15px; font-weight: 700; color: #4d6757; margin: 12px 0 0; }
+/* Fotografia do orientador: imagem original, apenas enquadrada com CSS. */
+.mentor-copy { min-width: 0; }
+.mentor-photo-frame { width: 126px; height: 136px; border-radius: 14px; overflow: hidden; flex: none; background: #e7ede8; }
+.mentor-photo { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 .site-footer { color: #7c887e; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding-block: 25px; font-size: 11px; }
 .footer-inner p { margin-bottom: 0; }
@@ -168,8 +172,10 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   .course-mark { width: 80px; height: 80px; border-radius: 13px; padding: 10px; }
   .course-copy h2 { font-size: 26px; }
   .course-copy > p:not(.eyebrow) { font-size: 13px; }
-  .mentor-inner { display: block; }
-  .mentor-name { margin-top: 15px; }
+  .mentor-inner { display: grid; grid-template-columns: minmax(0, 1fr) 104px; align-items: center; gap: 18px; }
+  .mentor-inner h2 { font-size: clamp(22px, 5.8vw, 28px); }
+  .mentor-name { margin-top: 10px; font-size: 13px; }
+  .mentor-photo-frame { width: 104px; height: 120px; border-radius: 12px; }
   .footer-inner { display: block; line-height: 1.7; }
   .footer-inner p + p { margin-top: 4px; }
   .detail-nav { padding-top: 20px; }
@@ -192,6 +198,10 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 }
 
 @media (max-width: 360px) {
+  .mentor-inner { grid-template-columns: minmax(0, 1fr) 84px; gap: 12px; }
+  .mentor-photo-frame { width: 84px; height: 106px; }
+  .mentor-inner h2 { font-size: 21px; }
+
   .brand-title { font-size: 10px; }
   .nav { gap: 12px; }
   .course-inner { grid-template-columns: 1fr; }
