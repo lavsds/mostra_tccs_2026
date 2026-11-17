@@ -20,6 +20,7 @@ mostra_tcc_2026_completo/
 │   ├── dados.js                # EDITE AQUI: nomes, e-mails, textos, logos, prints
 │   └── app.js                  # Renderização das páginas; evite editar sem necessidade
 ├── assets/img/
+│   ├── coordenacao/             # Foto da professora coordenadora
 │   ├── escola/                 # Logo da Etec
 │   ├── curso/                  # Elefante de Desenvolvimento de Sistemas
 │   └── projetos/
@@ -34,7 +35,8 @@ mostra_tcc_2026_completo/
 
 Edite **somente `js/dados.js`** para atualizar os dados, salvo quando for necessário alterar a aparência.
 
-- **Professor orientador:** `orientador.nome`.
+- **Orientação:** o nome do professor orientador aparece na seção `Orientação` da página inicial. A fotografia não está publicada.
+- **Coordenação do curso:** nome e foto da professora Elaine Cristina de Almeida Zanin aparecem na seção `Coordenação` da página inicial.
 - **Nome do software:** `projetos[].nome` e `projetos[].nomeCompleto`.
 - **Resumo no card:** `projetos[].resumo`.
 - **Introdução completa:** `projetos[].introducao`. Cada string no array corresponde a um parágrafo.
@@ -59,11 +61,11 @@ prints: [
 
 1. **HomeLink:** logo PNG original recebida e incluída com suporte escuro no layout.
 2. **ImobControl:** confirmado que a equipe tem quatro integrantes.
-3. **Professor orientador:** substituir `Nome do professor orientador` em `js/dados.js`.
-4. **Nome da imobiliária:** confirmar a grafia oficial (`Gárcia` no título enviado e `Garcia` na introdução e logo).
+3. **Orientação e coordenação:** o site apresenta Rubens Castaldelli Carlos na seção `Orientação`, sem fotografia, e Elaine Cristina de Almeida Zanin com foto na seção `Coordenação`, logo abaixo.
+4. **Nome da imobiliária:** manter a grafia `Garcia`, conforme a introdução e a identidade visual recebida.
 5. **Demonstrações:** não foram recebidos prints nem vídeos. Essas seções ficarão ocultas até a inclusão dos arquivos.
 6. **Autorização de publicação:** confirmar com a escola, os grupos e os responsáveis cabíveis que os nomes completos, fotografias e e-mails podem ser divulgados publicamente; remover contatos pessoais quando necessário.
-7. **Revisão textual:** as introduções foram mantidas conforme enviadas pelas equipes, sem reescrita de conteúdo.
+7. **Introduções:** os textos estão justificados; o texto do ImobControl foi separado em parágrafos sem alteração do conteúdo original.
 
 ## Publicação na Vercel com possibilidade de atualização
 
@@ -127,3 +129,8 @@ e os participantes as autorizações e a necessidade de publicar cada dado
 antes da divulgação, com atenção especial a menores de idade.
 O site estático não pede senhas nem utiliza formulário, mas os dados
 publicados podem ser copiados por visitantes e indexados por buscadores.
+
+
+## Foto da coordenadora do curso
+
+A foto de Elaine Cristina de Almeida Zanin está em `assets/img/coordenacao/elaine.webp` e aparece na seção **Coordenação do curso** da página inicial. O enquadramento responsivo é definido pelas classes `.coordinator-photo-frame` e `.coordinator-photo` em `css/style.css`.

@@ -1,6 +1,8 @@
 /**
  * Informações da Mostra de TCCs 2026.
- * Os IDs dos projetos são utilizados nas URLs
+ * Edite a função no campo "funcao" de cada integrante.
+ * Edite fotos e posições em "foto", "posicaoFoto" e "zoomFoto".
+ * Preserve os IDs dos projetos: são utilizados nas URLs.
  */
 window.DADOS_SITE = {
   "escola": {
@@ -17,9 +19,6 @@ window.DADOS_SITE = {
     "periodo": "Turma A (manhã)",
     "grupo": "Grupo B",
     "ano": "2026"
-  },
-  "orientador": {
-    "nome": "Rubens Castaldelli Carlos"
   },
   "projetos": [
     {
@@ -147,7 +146,7 @@ window.DADOS_SITE = {
           "nome": "LAVÍNIA ALESSANDRA SILVA",
           "email": "laviniaassd@gmail.com",
           "foto": "assets/img/projetos/condex/integrantes/lavinia.webp",
-          "posicaoFoto": "40% 24%",
+          "posicaoFoto": "50% 24%",
           "zoomFoto": 1.18,
           "funcao": "Desenvolvedora Front-end, UI/UX Designer e Documentação"
         },
@@ -175,7 +174,7 @@ window.DADOS_SITE = {
           "foto": "assets/img/projetos/condex/integrantes/murilo.webp",
           "posicaoFoto": "50% 16%",
           "zoomFoto": 1.14,
-          "funcao": "Líder e Desenvolvedor Full Stack"
+          "funcao": "Desenvolvedor Full Stack"
         }
       ]
     },
@@ -183,10 +182,13 @@ window.DADOS_SITE = {
       "id": "imobcontrol",
       "numero": "04",
       "nome": "ImobControl",
-      "nomeCompleto": "ImobControl Imobiliária Gárcia",
+      "nomeCompleto": "ImobControl Imobiliária Garcia",
       "resumo": "Sistema web para anúncios e administração de imóveis da Imobiliária Garcia.",
       "introducao": [
-        "Este projeto trata-se do desenvolvimento de um sistema web para a Imobiliária Garcia, onde pretende-se informatizar os processos de divulgação, busca e gestão de imóveis realizados pela empresa, objetivando facilidades em procedimentos como: cadastro e consulta de imóveis, gestão de proprietários, criação de anúncios, agendamento e acompanhamento de visitas, além do controle de usuários e permissões de acesso ao sistema. O software possuirá funcionalidades que deverão solucionar problemas como a dificuldade de clientes em localizar imóveis disponíveis de forma rápida e organizada, e a dependência de processos manuais ou pouco integrados para o cadastro de imóveis, o agendamento de visitas e a comunicação entre clientes, corretores e administração, decorrentes do processo hoje praticado pela imobiliária. Com a implantação do sistema pretende-se agilizar com segurança os procedimentos de divulgação e negociação de imóveis, permitindo que clientes realizem buscas avançadas, salvem imóveis favoritos e agendem visitas diretamente pela plataforma, e que corretores e administradores gerenciem imóveis, proprietários, anúncios, visitas e usuários a partir de um único ambiente, acessível remotamente. O projeto foi idealizado através de levantamento de requisitos realizado diretamente com o proprietário da Imobiliária Garcia, responsável por repassar as necessidades e os processos de trabalho da empresa, e deverá ser implantado após testes preliminares e validação pela direção da Imobiliária Garcia."
+        "Este projeto trata-se do desenvolvimento de um sistema web para a Imobiliária Garcia, onde pretende-se informatizar os processos de divulgação, busca e gestão de imóveis realizados pela empresa, objetivando facilidades em procedimentos como: cadastro e consulta de imóveis, gestão de proprietários, criação de anúncios, agendamento e acompanhamento de visitas, além do controle de usuários e permissões de acesso ao sistema.",
+        "O software possuirá funcionalidades que deverão solucionar problemas como a dificuldade de clientes em localizar imóveis disponíveis de forma rápida e organizada, e a dependência de processos manuais ou pouco integrados para o cadastro de imóveis, o agendamento de visitas e a comunicação entre clientes, corretores e administração, decorrentes do processo hoje praticado pela imobiliária.",
+        "Com a implantação do sistema pretende-se agilizar com segurança os procedimentos de divulgação e negociação de imóveis, permitindo que clientes realizem buscas avançadas, salvem imóveis favoritos e agendem visitas diretamente pela plataforma, e que corretores e administradores gerenciem imóveis, proprietários, anúncios, visitas e usuários a partir de um único ambiente, acessível remotamente.",
+        "O projeto foi idealizado através de levantamento de requisitos realizado diretamente com o proprietário da Imobiliária Garcia, responsável por repassar as necessidades e os processos de trabalho da empresa, e deverá ser implantado após testes preliminares e validação pela direção da Imobiliária Garcia."
       ],
       "logo": "assets/img/projetos/imobcontrol/logo.webp",
       "cor": "imobcontrol",
@@ -219,5 +221,8 @@ window.DADOS_SITE = {
         }
       ]
     }
-  ]
+  ],
+  "coordenadora": {
+    "nome": "Elaine Cristina de Almeida Zanin"
+  }
 };

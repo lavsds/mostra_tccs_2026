@@ -6,6 +6,7 @@
   --muted: #69786e;
   --accent: #709779;
   --accent-dark: #3f6d4e;
+  --course-purple: #5b236f;
   --line: #e1e8e0;
   --radius: 18px;
 }
@@ -26,15 +27,15 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .skip-link { position: absolute; top: -60px; left: 8px; z-index: 99; background: var(--ink); color: #fff; padding: 10px; }
 .skip-link:focus { top: 8px; }
 
-/* Cabeçalho: logo institucional, nome da mostra e navegação */
+/* Cabeçalho: identidade da escola e do curso, com navegação */
 .site-header { background: #f9faf8; border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 80px; }
 .brand { display: inline-flex; align-items: center; gap: 17px; min-width: 0; }
 .brand-logo { width: 103px; height: 59px; object-fit: contain; flex: none; }
 .brand-divider { width: 1px; height: 33px; background: var(--line); flex: none; }
-.brand-title { font-size: 12px; font-weight: 900; line-height: 1.4; white-space: nowrap; }
-.brand-title > span { color: var(--accent-dark); }
-.brand-title small { display: block; color: #87968a; font-size: 9px; font-weight: 700; letter-spacing: .13em; margin-top: 3px; }
+.brand-course { display: inline-flex; align-items: center; gap: 9px; min-width: 0; }
+.brand-course-logo { width: 43px; height: 43px; object-fit: contain; flex: none; }
+.brand-course-name { max-width: 155px; color: var(--course-purple); font-size: 11px; font-weight: 850; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; }
 .nav { display: flex; gap: clamp(14px, 3vw, 34px); color: #54685a; font-weight: 650; font-size: 13px; }
 .nav a:hover, .link-arrow:hover, .detail-nav a:hover { color: var(--accent-dark); }
 
@@ -49,7 +50,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 /* Cards de TCC */
 .project-section { padding-block: 45px 78px; border-top: 1px solid var(--line); background: var(--surface); }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 29px; }
-.section-heading h2, .course-copy h2, .mentor-inner h2, .detail-text-grid h2 { font-size: clamp(27px, 3.2vw, 39px); letter-spacing: -.05em; line-height: 1.15; margin-bottom: 0; }
+.section-heading h2, .course-copy h2, .coordinator-inner h2, .detail-text-grid h2 { font-size: clamp(27px, 3.2vw, 39px); letter-spacing: -.05em; line-height: 1.15; margin-bottom: 0; }
 .section-heading > p { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 255px; margin-bottom: 0; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .project-card { display: block; background: var(--surface); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); transition: transform .2s, box-shadow .2s; }
@@ -75,7 +76,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .logo-plate--imobcontrol { width: min(86%, 358px); height: 116px; padding: 12px; background: #f7f7f7; }
 .logo-fallback { color: #3f5361; font-weight: 800; font-size: 23px; text-align: center; }
 
-/* Seção do curso e professor orientador */
+/* Seção do curso, orientação e coordenação */
 .course-section { background: #edf3ee; border-top: 1px solid #dfe9df; }
 .course-inner { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 40px; align-items: center; }
 .course-mark { display: grid; place-items: center; width: 150px; height: 150px; padding: 19px; border: 1px solid #dce7dd; border-radius: 23px; background: #fff; }
@@ -84,14 +85,16 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .course-copy h2 { margin-bottom: 13px; }
 .course-copy > p:not(.eyebrow) { font-size: 14px; line-height: 1.8; color: #627267; margin-bottom: 19px; }
 .link-arrow { display: inline-flex; align-items: center; gap: 13px; color: #366643; font-weight: 800; font-size: 13px; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
-.mentor-section { background: #fff; border-bottom: 1px solid var(--line); padding-block: 37px; }
-.mentor-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-.mentor-inner .eyebrow { margin-bottom: 7px; }
-.mentor-inner h2 { font-size: clamp(22px, 2.4vw, 30px); }
-.mentor-name { font-size: 15px; font-weight: 700; color: #4d6757; margin: 12px 0 0; }
-/* Fotografia do orientador: imagem original, apenas enquadrada com CSS. */
+.mentor-section { background: #fff; border-top: 1px solid var(--line); padding-block: 27px; }
+.mentor-inner { display: flex; align-items: center; justify-content: flex-start; }
 .mentor-copy { min-width: 0; }
-.mentor-photo-frame {
+.mentor-inner .eyebrow, .coordinator-inner .eyebrow { margin-bottom: 7px; }
+.mentor-inner h2, .coordinator-inner h2 { font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -.05em; line-height: 1.15; margin-bottom: 0; }
+.mentor-name, .coordinator-name { font-size: 15px; font-weight: 700; color: #4d6757; margin: 12px 0 0; }
+.coordinator-section { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-block: 32px; }
+.coordinator-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.coordinator-copy { min-width: 0; }
+.coordinator-photo-frame {
   width: 155px;
   height: 165px;
   border-radius: 14px;
@@ -99,12 +102,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   flex: none;
   background: #e7ede8;
 }
-.mentor-photo {
+.coordinator-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
-  transform: scale(1.15);
+  object-position: center 34%;
 }
 .site-footer { color: #7c887e; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding-block: 25px; font-size: 11px; }
@@ -124,7 +126,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .detail-description { padding-block: 58px 60px; background: var(--surface); border-block: 1px solid var(--line); }
 .detail-text-grid { display: grid; grid-template-columns: minmax(170px,.8fr) minmax(0,1.8fr); gap: 60px; }
 .intro-paragraphs { max-width: 760px; }
-.intro-paragraphs p { color: #4d6154; line-height: 1.85; font-size: 14px; margin: 0 0 18px; }
+.intro-paragraphs p { color: #4d6154; font-size: 14px; line-height: 1.5; text-align: justify; text-justify: inter-word; text-indent: 1.25cm; hyphens: auto; margin: 0 0 18px; }
 .intro-paragraphs p:last-child { margin: 0; }
 .detail-demonstration { padding-block: 67px 80px; }
 .screen-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
@@ -165,8 +167,9 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   .brand { gap: 11px; }
   .brand-logo { width: 78px; height: 46px; }
   .brand-divider { height: 29px; }
-  .brand-title { font-size: 11px; }
-  .brand-title small { font-size: 7px; }
+  .brand-course { gap: 7px; }
+  .brand-course-logo { width: 35px; height: 35px; }
+  .brand-course-name { max-width: 128px; font-size: 8px; letter-spacing: .07em; }
   .nav { width: 100%; justify-content: flex-end; gap: 20px; padding-block: 3px; font-size: 12px; }
   .hero { padding-block: 33px 32px; }
   .hero h1 { font-size: clamp(35px, 9vw, 47px); }
@@ -185,10 +188,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   .course-mark { width: 80px; height: 80px; border-radius: 13px; padding: 10px; }
   .course-copy h2 { font-size: 26px; }
   .course-copy > p:not(.eyebrow) { font-size: 13px; }
-  .mentor-inner { display: grid; grid-template-columns: minmax(0, 1fr) 104px; align-items: center; gap: 18px; }
-  .mentor-inner h2 { font-size: clamp(22px, 5.8vw, 28px); }
-  .mentor-name { margin-top: 10px; font-size: 13px; }
-  .mentor-photo-frame { width: 104px; height: 120px; border-radius: 12px; }
+  .mentor-section { padding-block: 25px; }
+  .mentor-inner h2, .coordinator-inner h2 { font-size: clamp(22px, 5.8vw, 28px); }
+  .mentor-name, .coordinator-name { margin-top: 10px; font-size: 13px; }
+  .coordinator-inner { display: grid; grid-template-columns: minmax(0, 1fr) 104px; align-items: center; gap: 18px; }
+  .coordinator-photo-frame { width: 104px; height: 120px; border-radius: 12px; }
   .footer-inner { display: block; line-height: 1.7; }
   .footer-inner p + p { margin-top: 4px; }
   .detail-nav { padding-top: 20px; }
@@ -197,7 +201,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   .detail-intro .logo-plate { align-self: center; max-width: 380px; height: 155px; }
   .detail-text-grid { grid-template-columns: 1fr; gap: 22px; }
   .detail-description { padding-block: 48px; }
-  .intro-paragraphs p { font-size: 13.5px; line-height: 1.78; }
+  .intro-paragraphs p { font-size: 13.5px; line-height: 1.5; }
   .screen-grid { grid-template-columns: 1fr; }
   .screen-image { min-height: 175px; }
   .team-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
@@ -211,11 +215,12 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 }
 
 @media (max-width: 360px) {
-  .mentor-inner { grid-template-columns: minmax(0, 1fr) 84px; gap: 12px; }
-  .mentor-photo-frame { width: 84px; height: 106px; }
-  .mentor-inner h2 { font-size: 21px; }
+  .coordinator-inner { grid-template-columns: minmax(0, 1fr) 84px; gap: 12px; }
+  .coordinator-photo-frame { width: 84px; height: 106px; }
+  .coordinator-inner h2 { font-size: 21px; }
 
-  .brand-title { font-size: 10px; }
+  .brand-course-logo { width: 32px; height: 32px; }
+  .brand-course-name { max-width: 118px; font-size: 7.5px; }
   .nav { gap: 12px; }
   .course-inner { grid-template-columns: 1fr; }
   .course-mark { width: 82px; height: 82px; }

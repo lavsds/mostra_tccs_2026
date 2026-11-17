@@ -16,15 +16,19 @@
   <!-- Navegação principal; dados e logos em js/dados.js. -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Página inicial da Mostra de TCCs">
+      <a class="brand" href="index.html" aria-label="Página inicial da Mostra de TCCs 2026">
         <img class="brand-logo" id="logo-etec" src="assets/img/escola/logo-etec.png" alt="Etec João Belarmino">
         <span class="brand-divider" aria-hidden="true"></span>
-        <span class="brand-title">MOSTRA DE TCCs <span>2026</span><small>DESENVOLVIMENTO DE SISTEMAS</small></span>
+        <span class="brand-course">
+          <img class="brand-course-logo" src="assets/img/curso/logo-ds-roxa.png" alt="" aria-hidden="true">
+          <span class="brand-course-name">Desenvolvimento de Sistemas</span>
+        </span>
       </a>
       <nav class="nav" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#curso">O curso</a>
-        <a href="#orientador">Orientação</a>
+        <a href="#curso">O Curso</a>
+        <a href="#orientacao">Orientação</a>
+        <a href="#coordenacao">Coordenação</a>
       </nav>
     </div>
   </header>
@@ -33,7 +37,6 @@
     <!-- Abertura compacta da mostra. -->
     <section class="hero container" id="inicio" aria-labelledby="titulo-mostra">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> ETEC JOÃO BELARMINO · AMPARO/SP</p>
         <h1 id="titulo-mostra">Mostra de TCCs <span>2026.</span></h1>
         <p class="hero-description">Conheça os Trabalhos de Conclusão de Curso desenvolvidos pelos estudantes do 3º ano de Desenvolvimento de Sistemas.</p>
         <p class="hero-meta" id="identificacao-turma">Turma A (manhã) · Grupo B</p>
@@ -69,18 +72,29 @@
       </div>
     </section>
 
-    <!-- Orientação: foto original exibida com recorte visual responsivo. -->
-    <section class="section mentor-section" id="orientador" aria-labelledby="titulo-orientador">
+    <!-- Orientação: nome do professor, sem fotografia por enquanto. -->
+    <section class="section mentor-section" id="orientacao" aria-labelledby="titulo-orientador">
       <div class="container mentor-inner">
         <div class="mentor-copy">
           <p class="eyebrow">ORIENTAÇÃO</p>
           <h2 id="titulo-orientador">Professor orientador<span class="accent">.</span></h2>
-          <p class="mentor-name" id="nome-orientador">Rubens Castaldelli Carlos</p>
+          <p class="mentor-name">Rubens Castaldelli Carlos</p>
         </div>
-        <div class="mentor-photo-frame">
-          <img class="mentor-photo" src="assets/img/orientador/rubens.jpeg"
-               alt="Professor Rubens Castaldelli Carlos, orientador dos TCCs"
-               width="126" height="136" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Coordenação do curso: foto da professora coordenadora. -->
+    <section class="section coordinator-section" id="coordenacao" aria-labelledby="titulo-coordenadora">
+      <div class="container coordinator-inner">
+        <div class="coordinator-copy">
+          <p class="eyebrow">COORDENAÇÃO</p>
+          <h2 id="titulo-coordenadora">Coordenadora do curso<span class="accent">.</span></h2>
+          <p class="coordinator-name" id="nome-coordenadora">Elaine Cristina de Almeida Zanin</p>
+        </div>
+        <div class="coordinator-photo-frame">
+          <img class="coordinator-photo" src="assets/img/coordenacao/elaine.webp"
+               alt="Professora Elaine Cristina de Almeida Zanin, coordenadora do curso"
+               width="155" height="165" loading="lazy">
         </div>
       </div>
     </section>
